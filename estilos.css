@@ -86,4 +86,40 @@ border-radius: 10px;
     color: #fff;
 }
 
+/* Estilos para el footer */
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #33333360;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.social-icons {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.social-icons li {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 24px;
+}
+
+.social-icons a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #00d9ff;
+}
+
+
+
+
 
