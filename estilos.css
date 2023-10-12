@@ -102,9 +102,15 @@ footer {
     width: 100%;
     background-color: #333333fa;
     color: #fff;
-    padding: 20px;
+    padding: 10px;
     text-align: center;
     z-index: 1000;
+}
+#final{
+    font-size:18px;
+    line-height: 1.6;
+    color: #050505;
+    margin-bottom: 10px; 
 }
 
 .social-icons {
@@ -120,7 +126,7 @@ footer {
 }
 
 .social-icons a {
-    color: #4a8dda;
+    color: rgb(55, 143, 243);
     text-decoration: none;
     transition: color 0.3s;
 }
@@ -156,7 +162,7 @@ footer {
  align-items: center;
  flex-wrap: wrap;
  transform-style: preserve-3d;
- width: 1100px;
+ width: 1200px;
 }
 
 #servicios .card1{
@@ -358,6 +364,182 @@ transition: 1s ease;
     color: #f9f9f9;
 }
 
+/* texto pagina quienes somos*/
+main {
+    padding-top: 20px; /* Espacio superior entre el nav y el texto */
+    padding-bottom: 20px; /* Espacio inferior entre el texto y el footer */
+}
+section {
+    max-width: 1200px; /* Limita el ancho del contenido para facilitar la lectura */
+    margin: 0 auto; /* Centra el contenido horizontalmente */
+    padding: 20px; /* Agrega un espacio alrededor del contenido */
+    text-align: justify; /* Justifica el texto para una distribución uniforme */
+}
+
+h1 {
+    font-size: 42px;
+    color: #080202;
+    margin-bottom: 20px;
+    transition: color 0.3s; /* Agregamos una transición suave al color */
+}
+
+p {
+    font-size: 28px;
+    line-height: 1.6;
+    color: #050505;
+    margin-bottom: 20px;
+    transition: color 0.3s; /* Agregamos una transición suave al color */
+}
+
+/* Cambio de color al pasar el cursor por encima */
+h1:hover {
+    color: #2600ff; /* Cambia el color a rojo cuando el cursor está encima */
+}
+
+p:hover {
+    color: #fff; /* Cambia el color a rojo cuando el cursor está encima */
+}
+
+.about-us {
+    background-color: transparent; /* Fondo transparente para mostrar el fondo dorado brillante */
+    padding: 50px;
+    text-align: center;
+    color: rgb(17, 1, 1); /* Texto en blanco para destacar sobre el fondo dorado */
+    font-family: Arial, sans-serif; /* Cambia la fuente según tus preferencias */
+}
+
+.about-us h2 {
+    font-size: 35px; /* Tamaño de fuente grande para el título */
+    font-style: italic; /* Texto en cursiva */
+    margin-bottom: 20px;
+}
+
+.about-us h3 {
+    font-size: 30px; /* Tamaño de fuente para los subtítulos */
+    margin-top: 20px; /* Espacio superior */
+    color: gold;
+}
+
+.about-us p {
+    font-size: 20px; /* Tamaño de fuente para el texto principal */
+    line-height: 1.6; /* Espaciado entre líneas */
+    margin: 20px 0; /* Espaciado vertical */
+}
+
+.about-us a {
+    color: #007BFF; /* Enlaces en un tono de azul */
+    text-decoration: none; /* Sin subrayado */
+}
+
+/* Estilos para los enlaces de contacto */
+.about-us a:hover {
+    text-decoration: underline; /* Subrayado al pasar el ratón */
+}
+
+.about {
+    min-height: 400px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 80px;
+    justify-items: center;
+    align-items: center;
+}
+
+.about__img {
+    text-align: center;
+}
+
+.about__img--left {
+    text-align: left;
+}
+
+.about__picture {
+    max-width: 80%;
+    box-shadow: 30px 20px 10px 10px #000;
+    border-radius: 1em;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.about__picture:hover {
+    transform: scale(1.05);
+    box-shadow: 40px 30px 20px 20px #000;
+}
+
+.about__paragraph {
+    margin-bottom: 20px;
+    line-height: 1.5;
+    font-weight: 300;
+}
+
+/* estilos para personas que trabajan */
+.testimony__grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    gap: 3px;
+    place-content: auto;
+}
+
+.testimony__item {
+    /* width: 80%; */ /* Puedes eliminar esta propiedad si deseas que los elementos ocupen todo el ancho */
+    margin: 0 auto;
+    background: rgba(5, 199, 233, 0.37);
+    box-shadow: 0 15px 10px rgba(148, 69, 141, 0.986);
+    border-radius: 7px;
+    padding: 30px 25px;
+    color: #1d0000;
+    margin-bottom: 50px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.testimony__item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 20px rgb(55, 143, 243);
+}
+
+.testimony__person {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.testimony__img {
+    width: 100px;
+    min-width: 100px;
+    height: 100px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    margin-right: 30px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.testimony__img:hover {
+    transform: scale(1.1);
+}
+
+.testimony__name {
+     font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+
+.testimony__verification {
+    color: #E0AFA0;
+    font-weight: 700;
+}
+
+.testimony__review {
+    font-weight: 300;
+}
+
+.testimony p{
+    font-size: 18px;
+    line-height: 1.6;
+    color: #050505;
+    margin-bottom: 20px;
+    transition: color 0.3s; 
+}
 
 
 
